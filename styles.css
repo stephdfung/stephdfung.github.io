@@ -4,6 +4,7 @@ body {
   font-weight: 200;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  width: 100vw;
   padding: 0;
 }
 
@@ -21,11 +22,11 @@ body {
 .nav {
   border-bottom: 1px solid #000;
   padding: 0px 0px 5px 0px;
-  margin: 5px 5px 0 5px;
+  margin: 5px 10px 0 10px;
   text-align: right;
   position: fixed;
   height: 23px;
-  width: 100%;
+  width: 98vw;
   background-color: #fff;
 }
 
@@ -180,9 +181,9 @@ li {
 }
 
 #p3 {
-  background-image: url('https://i.imgur.com/pYkGCdG.jpg');
+  background-image: url('https://i.imgur.com/uMQgOM7.png');
 }
 
 #p4 {
-  background-image: url('https://i.imgur.com/3bKEkld.png');
+  background-image: url('https://i.imgur.com/xSzOb5W.png');
 }
