@@ -50,6 +50,15 @@ a, a:visited, a:active, a:hover {
 
 #Hero {
   position: relative;
+  height: 95%;
+}
+
+.positioning > h1 {
+  font-size: 50px;
+}
+
+.positioning > h2 {
+  font-size: 45px;
 }
 
 .positioning {
@@ -65,7 +74,6 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
   font-weight: 100;
 }
 
@@ -108,6 +116,7 @@ h2 {
  max-width: 750px;
  flex-wrap: wrap;
  margin: 0 auto;
+ padding-bottom: 20px;
 }
 
 h3 {
@@ -170,6 +179,14 @@ ul {
 li {
   list-style: none;
   padding: 0 15px 0 15px;
+  font-size: 14pt;
+}
+
+.container > p {
+  max-width: 700px;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 14pt;
 }
 
 #p1 {
@@ -186,4 +203,19 @@ li {
 
 #p4 {
   background-image: url('https://i.imgur.com/xSzOb5W.png');
+}
+
+@media only screen and (max-width: 779px) {
+  .nav > a, .nav > a:visited, .nav > a:active {
+    font-size: 10px;
+  }
+  .positioning > h1 {
+    font-size: 40px;
+  }
+  .positioning > h2 {
+    font-size: 30px;
+  }
+  .project-container {
+    max-width: 350px;
+  }
 }
