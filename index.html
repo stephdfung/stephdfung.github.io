@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
 
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css">    
+    <link rel="stylesheet" type="text/css" href="./styles/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu" rel="stylesheet">
       <title>Steph Fung</title>
     </head>
@@ -13,57 +15,89 @@
       <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
 
-                <div class="nav">
+                <nav>
                     <a href="#Work">Work</a>
                     <a href="#About">About</a>
                     <a href="#Contact">Contact</a>
-                  </div>
+                </nav>
                   
-                <div class="content">
-                  
-                    <div class="container" id="Hero">
-                        <div class="positioning">
-                          <h1>Hi, I'm Steph!</h1>
-                          <h2>I'm a web developer based in  Brooklyn, NY. <br/>
-                          With a background in customer experience and design, <br/>
-                          I care deeply about user-interaction and usability.</h2>
-                        </div>
-                      </div>
+                <div id="fullpage">
 
-                  <div class="container" id="Work">
-                      <h3>Work</h3>
-                      <div class="project-container">
-              
-                          <div class="project" id="p1">
-                            <a href="http://amaze-game.bitballoon.com/" target="_blank">
-                              <p>A maze game built with JQuery, HTML and CSS. This game features DOM manipulation on a hover effect over the game board to "move" through the maze.</p>
-                            </a>
-                          </div>
-
-                          <div class="project" id="p2">
-                            <a href="https://eventif-y.herokuapp.com/" target="_blank">
-                              <p>A web application built with Express.js, Node.js, PostgreSQL, HTML and CSS. Tapping into the SeatGeek API, users can search for the top events g in any given city.</p>
-                            </a>
-                          </div>
-
-                          <div class="project" id="p3">
-                            <a href="https://mighty-fjord-94542.herokuapp.com/" target="_blank">
-                            <p>A social event web application built with Express.js, React, PostgreSQL, HTML and CSS. Music lovers can search for parties in their area, or host one themself to make new connections.</p>
-                            </a>
-                          </div>
-
-                          <div class="project" id="p4">
-                            <a href="https://sn-appr.herokuapp.com/" target="_blank">
-                            <p>A photo-sharing web application built with React, Ruby on Rails, PostgreSQL, HTML and CSS. Users can take photos on their computer's camera, add fun filters and then view them in the gallery.</p>
-                            </a>
-                          </div> 
-
-                      </div>
-
+                  <!-- HERO SECTION -->
+                  <div class="section yellow">
+                    <div class="positioning">
+                      <h1>Hi, I'm Steph!</h1>
+                      <h2>I'm a web developer based in Brooklyn, NY. <br/>
+                      With a background in customer experience and design, <br/>
+                      I care deeply about user-interaction and usability.</h2>
                     </div>
+                  </div>
 
-                  <div class="container" id="About">
-                      <h3>About</h3>
+                  <!-- WORK SECTION -->
+                  <div class="section grey">
+                      <div class="slide" data-anchor="slide1">
+                        <center>
+                          <div class="project">
+                            <h3>WORK</h3>
+                            <h4>A small sample of my projects</h4>
+                          </div>
+                        </center>
+                      </div>
+                    
+                      <div class="slide" data-anchor="slide1">
+                          <center>
+                            <div class="project" id="p1">
+                              <a href="http://amaze-game.bitballoon.com/" target="_blank">
+                                <h4>A-Maze</h4>
+                                <img src="./assets/amaze.png" alt="amaze">
+                              </a>
+                                <p>A maze game built with JQuery, HTML and CSS. This game features DOM manipulation on a hover effect over the game board to "move" through the maze.</p>
+                            </div>
+                        </center>
+                       
+                      </div>
+
+                      <!-- <div class="slide" data-anchor="slide2">
+                        <center>
+                          <div class="project" id="p2">
+                              <a href="https://eventif-y.herokuapp.com/" target="_blank">
+                                <h4>Eventify</h4>
+                                <img src="https://i.imgur.com/pYkGCdG.jpg" alt="eventify">
+                              </a>
+                                <p>A web application built with Express.js, Node.js, PostgreSQL, HTML and CSS. Tapping into the SeatGeek API, users can search for the top events g in any given city.</p>
+                            </div>
+                          </center>
+                      </div> -->
+
+                      <div class="slide" data-anchor="slide3">
+                        <center>
+                            <div class="project" id="p3">
+                            <h4>Soundland</h4>
+                            <a href="https://mighty-fjord-94542.herokuapp.com/" target="_blank">
+                              <img src="./assets/soundland.png" alt="soundland">
+                            </a>
+                              <p>A social event web application built with Express.js, React, PostgreSQL, HTML and CSS. Music lovers can search for parties in their area, or host one themself to make new connections.</p>
+                          </div>
+                        </center>
+                      </div>
+
+                      <div class="slide" data-anchor="slide4">
+                        <center>
+                            <div class="project" id="p4">
+                              <h4>Snappr</h4>
+                                <a href="https://sn-appr.herokuapp.com/" target="_blank">
+                                  <img src="./assets/snappr.png" alt="snappr">
+                                </a>
+                                  <p>A photo-sharing web application built with React, Ruby on Rails, PostgreSQL, HTML and CSS. Users can take photos on their computer's camera, add fun filters and then view them in the gallery.</p>
+                              </div>
+                        </center>
+                      </div>
+
+                  </div>
+                    
+                  <!-- ABOUT SECTION -->
+                  <div class="section">
+                      <h3 class="about">About</h3>
                       <p>I'm a curious learner and always expanding my skill set.
                          Combining my studies in Graphic Design, and the 4 years I worked in customer facing roles, I always consider user-interaction and usability first.
                          My goal is to create impactful applications that are not only innovative but beautiful. I build with: 
@@ -84,7 +118,7 @@
                               <li>NodeJS</li>
                               <li>Ruby on Rails</li>
                               <li>ExpressJS</li>
-                              <li>SQL, PostgreSSQL</li>
+                              <li>PostgreSQL</li>
                             </ul>
                           </div>
 
@@ -96,20 +130,41 @@
                             </ul>
                           </div>
                       </div>
-              
-                    </div>
+                  </div>
 
-                  <div id="Contact">
-                      <h3>Contact me</h3>
+                  <!-- CONTACT SECTION -->
+                  <div class="section yellow">
+                      <h3>Contact
+                        <br>me</h3>
                       <p>
-                        <a href="https://www.linkedin.com/in/stephaniedfung/"><img src="http://www.iconsfind.com/wp-content/uploads/2015/11/20151104_563964389a49e.png" class="icon"></a>
-                        <a href="http://github.com/stephdfung"><img class="icon" src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67"></a>
-                        <a href="mailto:stephaniedfung@gmail.com?Subject=Hello%20from%20stephfung.com" target="_top"><img src="http://downloadicons.net/sites/default/files/email-message-icon-82430.png" class="icon"></a>
+                        <center>
+                          <a href="https://www.linkedin.com/in/stephaniedfung/"><img src="./assets/linkedin-icon.svg" class="icon"></a>
+                          <a href="http://github.com/stephdfung"><img class="icon" src="./assets/github-icon.png"></a>
+                          <a href="mailto:stephaniedfung@gmail.com?Subject=Hello%20from%20stephfung.com" target="_top"><img src="./assets/email-icon.png" class="icon"></a>    
+                        </center>
                       </p>
-                    </div>
+                  </div>
 
                 </div>
+                
+        
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./javascripts/jquery.fullpage.min.js"></script>
+        <script type="text/javascript" src="./script.js"></script> -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./scripts/jquery.fullpage.min.js"></script>
+        <script src="./scripts/script.js" type="text/javascript" charset="utf-8" async defer></script>
 
-        <script type="text/javascript" src="/src/App.js"></script>
+        <!-- ANALYTICS -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109159491-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109159491-1');
+        </script>
+
       </body>
     </html>
